@@ -4,6 +4,7 @@ import cors from "cors"
 // *********** All-Routes *************
 import auth from "./routes/auth.routes.js";
 import user from "./routes/user.routes.js";
+import "dotenv/config"
 // *********** All-Routes *************
 
 import cookieParser from "cookie-parser";
