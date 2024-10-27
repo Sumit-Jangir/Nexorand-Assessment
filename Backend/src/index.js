@@ -48,8 +48,8 @@ app.use((err, req, res, next) => {
     error: err.message,
   });
 });
-
-app.listen(7000, async () => {
+const PORT = process.env.PORT || 7000;
+app.listen(PORT, async () => {
   console.log("Server is running on port 7000");
   await connectDb();
 });
